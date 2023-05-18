@@ -1,0 +1,10 @@
+services:
+  db:
+    image: 'postgres:15.2'
+    container_name: 'postgres_links'
+    ports:
+      - '5432:5432'
+    environment:
+      POSTGRES_DB: "postgres_links"
+      POSTGRES_USER: "postgres"
+      POSTGRES_PASSWORD: "1234"

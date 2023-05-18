@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Redirecting...</title>
+    <script type="text/javascript">
+        window.onload = function() {
+            var params = new URLSearchParams(window.location.search);
+            var url = params.get('url');
+
+            // Check if the 'url' parameter is present
+            if (url) {
+                // Redirect to the provided URL
+                window.location.href = url;
+            } else {
+                // Handle the case when 'url' parameter is not present
+                console.error('Missing URL parameter.');
+                // Display an error message or redirect to an error page
+            }
+        };
+    </script>
+</head>
+<body>
+<h1>Redirecting...</h1>
+</body>
+</html>
